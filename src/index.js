@@ -3,15 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 // import App from './App';
 import * as serviceWorker from './serviceWorker';
-import Hello from './Hello'
+import CardList from './CardList';
+import {robots} from './robots';
 import 'tachyons';
 
 ReactDOM.render( 
-  <React.StrictMode>
-    <Hello greeting = {'Hello React Ninja'}/>
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+  <CardList robots={robots}/>
+  
+  , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
